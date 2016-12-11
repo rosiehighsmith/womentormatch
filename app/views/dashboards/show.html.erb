@@ -5,22 +5,7 @@
   <hr class = "gray"/>
   <br />
   <div id = "show-intro">
-  <% current_user.enrolled_courses.each do |course| %>
-    <h3 class = "text-center">
-      <%= link_to course.title, course_path(course) %>
-    </h3>
-    <br />
-    <%= image_tag course.image, class: 'img-responsive' %>
-    <br />
-      <div class = "col-sm-3 col-xs-12 text-center">
-      <%= link_to "Learn More", course_path(course), class: 'btn btn-primary' %> 
-      </div>
-      <div class = "col-sm-9 col-xs-12">
-      <%= course.description %>
-      </div>
-    <hr/>
-    <br class = "clr" />
-  <% end %>
+ 
   </div>
   <hr />
 
@@ -28,21 +13,6 @@
   <hr class = "gray"/>
   <br />
   <div id = "show-intro">
-  <% current_user.courses.each do |course| %>
-    <h3 class = "text-center">
-      <%= link_to course.title, course_path(course) %>
-    </h3>
-    <br />
-    <%= image_tag course.image, class: 'img-responsive' %> 
-    <br />
-    <div class = "col-sm-3 col-xs-12 text-center">
-      <%= link_to "More Info...", course_path(course), class: 'btn btn-primary' %>
-    </div>
-    <div class = "col-sm-9 col-xs-12">
-      <%= course.description %>
-    </div>
-    <br class = "clr" />
-    <hr/>
-  <% end %>
+  
   </div>
 </div>

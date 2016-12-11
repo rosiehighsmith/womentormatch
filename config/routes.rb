@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'privacy', to: 'static_pages#privacy'
   get 'team', to: 'static_pages#team'
   get 'about', to: 'static_pages#about'
-  resources :courses, only: [:index, :show] do
+  resources :mprofiles, only: [:index, :show] do
     resources :enrollments, only: :create
   end
   resources :lessons, only: [:show]
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     resources :sections, only: [:update] do
       resources :lessons, only: [:create]
     end
-    resources :courses, only: [:new, :create, :show] do
+    resources :mprofiles, only: [:new, :create, :show] do
       resources :sections, only: [:create]
     end
   end
