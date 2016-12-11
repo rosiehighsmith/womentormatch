@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
   def team
   end
 
-  def careers
+  def about
   end
   
 end
