@@ -9,10 +9,9 @@
           <h2 class="mprofile-title">
             <%= link_to mprofile.first_name, mprofile_path(mprofile) %>
             <br />
-            <br />
             <%= image_tag mprofile.image, class: 'img-responsive' %>
           </h2>
-          <br class = "clr"/>
+
           <div class="description">
             <%= mprofile.bio %>
           </div>
