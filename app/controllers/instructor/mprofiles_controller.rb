@@ -9,7 +9,7 @@ class Instructor::MprofilesController < ApplicationController
   def create
     @mprofile = current_user.mprofiles.create(mprofile_params)
     if @mprofile.valid?
-      redirect_to instructor_mprofile_path(@mprofile)
+      redirect_to mprofiles_path
     else
       render :new, status: :unprocessable_entity
     end
